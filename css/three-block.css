@@ -1,0 +1,40 @@
+.three-block .container{
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    gap: 45px 40px;
+    max-width: 856px;
+}
+
+.three-block .container img{
+    max-width: 90%;
+
+}
+
+
+@media (width >= 575px) {
+    .three-block .container{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
+
+
+.three-block .container div.img-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.three-block .container div h3{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+    color: rgb(68, 68, 68);
+}
+
+.three-block .container div p{
+    font-weight: 400;
+    font-size: 14px;line-height: 25px;
+    margin-bottom: 8px;
+}

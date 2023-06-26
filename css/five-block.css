@@ -1,0 +1,101 @@
+.five-block {
+    margin-top: 100px;
+}
+
+.five-block .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.five-block .container div img {
+    width: 80px;
+    margin-bottom: 8px;
+}
+
+.five-block .container div h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+    letter-spacing: 1px;
+}
+
+.five-block .container div p {
+    color: rgb(108, 117, 125);
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 17px;
+}
+
+.five-block .container div p .sertifika {
+    appearance: none;
+    border: none;
+    background: transparent;
+    font-size: inherit;
+    text-decoration: underline;
+    color: var(--main-blue);
+    cursor: pointer;
+
+}
+
+
+@media (width >=568px) {
+    .five-block .container {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: left;
+    }
+}
+
+@media (width >=1024px) {
+    .five-block .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+/*? Sertifika CSS  */
+
+.five-block .sertifika-box {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, .7);
+    transition: .5s all linear;
+
+}
+
+.five-block .sertifika-box.show {
+    opacity: 1;
+    display: block;
+}
+
+.five-block .sertifika-box .close-icon {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    cursor: pointer;
+}
+
+.five-block .sertifika-box img {
+    max-width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes modal {
+    0% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        display: block;
+    }
+}

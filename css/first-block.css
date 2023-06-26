@@ -1,0 +1,368 @@
+.first-block {
+    background-color: var(--main-blue);
+    height: 650px;
+}
+
+.first-block .header {
+    padding: 60px 10px;
+    position: relative;
+}
+
+
+.first-block .header.notnumber::before{
+    content: 'Lütfen Gönderi Numarası Giriniz';
+    display: block;
+}
+
+.first-block .header.errornumber::before{
+    content: 'Lütfen Geçerli Bir Gönderi Numarası Giriniz';
+    display: block;
+}
+
+.first-block .header::before{
+    content: '';
+    position: absolute;
+    padding: 10px 40px;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+    border-radius: 6px;
+    color :rgb(102, 77, 3);;
+    background-color: rgb(255, 243, 205);
+    border: 1px solid rgb(255, 230, 156);
+    text-align: center;
+    display: none;
+}
+
+@media (width <=575px) {
+    .first-block .header::before{
+        width: 80%;
+    }
+}
+
+.first-block .header h1 {
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.first-block .header p {
+    color: rgba(255, 255, 255, .4);
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+
+.first-block .box {
+    position: relative;
+    height: 500px;
+    /* background-color: rgba(180, 83, 83, 0.1); */
+}
+
+.first-block .box .image-box {
+    display: none;
+    position: absolute;
+    right: -0px;
+}
+
+.first-block .box .image-box img {
+    height: 450px;
+    width: 370px;
+}
+
+
+.first-block .box .teklif-box {
+    position: absolute;
+    /* bottom: -100px; */
+    left: 50%;
+    transform: translateX(-50%);
+    /* height: 400px; */
+    width: 90%;
+    max-width: 550px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.first-block .box .teklif-box .control-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-block .box .teklif-box .control-group input {
+    appearance: none;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(57, 118, 209, 0.7);
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, .2);
+    color: white;
+    padding: 25px;
+    cursor: pointer;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.first-block .box .teklif-box .control-group input:hover {
+    background-color: var(--main-blue);
+}
+
+.first-block .box .teklif-box .control-group input:checked {
+    background-color: white;
+    color: black;
+}
+
+.first-block .box .teklif-box .control-group input::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 400;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+
+
+}
+
+.first-block .box .teklif-box .control-group input:nth-child(1)::after {
+    content: 'Standart Taşıma';
+}
+
+.first-block .box .teklif-box .control-group input:nth-child(2)::after {
+    content: 'Double Deck';
+}
+
+.first-block .box .teklif-box .control-group input:nth-child(3)::after {
+    content: 'Diğer Ürünler';
+}
+
+.first-block .box .form-group {
+    display: none;
+    background-color: white;
+    padding: 24px 48px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    animation: animate .3s linear 1;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    100% {
+        display: none;
+    }
+}
+
+@keyframes animate-2 {
+    0% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        display: block;
+    }
+}
+
+
+.first-block .box .form-group.show {
+    display: block;
+    animation: animate-2 .3s linear 1;
+}
+
+.first-block .box .form-group .form p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+.first-block .box .form-group .form form {
+    display: grid;
+    gap: 15px;
+}
+
+.first-block .box .form-group .form form .form-div {
+    display: flex;
+}
+
+.first-block .box .form-group .form form .form-div span {
+    border: 1px solid rgb(168, 170, 172);
+    height: 39px;
+    width: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: none;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.first-block .box .form-group .form form .form-div span img {
+    width: 16px;
+    height: 16px;
+}
+
+.first-block .box .form-group .form input,
+select {
+    border: 1px solid rgb(168, 170, 172);
+    color: rgb(73, 80, 87);
+    font-size: 14px;
+    width: 100%;
+    font-weight: 400;
+    height: 39px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    padding-left: 10px;
+    outline: none;
+    appearance: none;
+}
+
+.first-block .box .form-group .form input:focus {
+    border: 1px solid rgb(103, 108, 114);
+
+}
+
+.first-block .box .form-group .form input::placeholder {
+    color: rgb(73, 80, 87);
+}
+
+.first-block .box .form-group .form form .form-button button {
+    width: 100%;
+    background-color: var(--main-blue);
+    color: white;
+    padding: 7px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media (width >=575px) {
+    .first-block .box .form-group .form form {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .first-block .box .form-group .form form .form-button,
+    .hizmet-sec {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+
+
+@media (width >=575px) {
+    .first-block .box .teklif-box .control-group {
+        flex-direction: row;
+    }
+
+    .first-block {
+        height: 350px;
+    }
+}
+
+
+
+@media (width >=995px) {
+    .first-block .box .image-box {
+        display: block;
+    }
+
+    .first-block {
+        height: 450px;
+    }
+
+    .first-block .box .teklif-box {
+        left: 0;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.shapedividers_com-1962 {
+    overflow: hidden;
+    position: relative;
+    height: 75px !important;
+}
+
+.shapedividers_com-1962::before {
+    content: '';
+    font-family: 'shape divider from ShapeDividers.com';
+    position: absolute;
+    z-index: 3;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw;
+    background-size: 189% 353px;
+    background-position: 26% 0%;
+    background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M0 .5c3.07.55 9.27-.42 16.14 0 6.88.4 13.75.57 19.14-.11V0H0z" fill="%23f1f1f1"/><path d="M0 1c3.17.8 7.29-.38 10.04-.55 2.75-.17 9.25 1.47 12.67 1.3 3.43-.17 4.65-.84 7.05-.87 2.4-.02 5.52.88 5.52.88V0H0z" opacity=".5" fill="%23f1f1f1"/><path d="M0 1.85c2.56-.83 7.68-.3 11.79-.42 4.1-.12 6.86-.61 9.58-.28 2.73.33 5.61 1.17 8.61 1 3-.19 4.73-.82 5.3-.84V.1H0z" opacity=".5" fill="%23f1f1f1"/></svg>');
+}
+
+@media (min-width:2100px) {
+    .shapedividers_com-1962::before {
+        background-size: 189% calc(2vw + 353px);
+    }
+}

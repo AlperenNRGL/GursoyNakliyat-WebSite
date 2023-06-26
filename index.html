@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gürsoy Nakliyat | Uluslar Arası Sıcaklık Kontrollü Taşıma</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/first-block.css">
+        <link rel="stylesheet" href="css/second-block.css">
+        <link rel="stylesheet" href="css/three-block.css">
+        <link rel="stylesheet" href="css/four-block.css">
+        <link rel="stylesheet" href="css/five-block.css">
+        <link rel="stylesheet" href="css/six-block.css">
+        <link rel="stylesheet" href="css/seven-block.css">
+        <link rel="stylesheet" href="css/eight-block.css">
+        <link rel="stylesheet" href="css/nine-block.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/siparis-modal.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100&display=swap"
+            rel="stylesheet">
+
+    </head>
+
+    <body>
+
+
+
+
+        <!--?  top - navbar   -->
+        <div class="top-navbar">
+            <div class="container">
+                <div class="content">
+                    <div class="img-varlik">
+                        <img src="images/icons/varlik.svg" alt="">
+                    </div>
+                    <div class="box">
+                        <div class="info">
+                            <div class="info-in">
+                                <div class="icon"><img src="/images/icons/telephone.svg"></div>
+                                <div class="information">
+                                    <div class="information-first">Bizi Arayın:</div>
+                                    <div class="information-second">0 850 551 47 79</div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="info-in">
+                                <div class="icon"><img src="/images/icons/mail.svg"></div>
+                                <div class="information">
+                                    <div class="information-first">Bizi Yazın:</div>
+                                    <div class="information-second">info@gursoynakliyat.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ? navbar -->
+
+        <nav class="navbar">
+            <div class="container">
+                <div class="menu-icon kutu" onclick="menu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" class="bi bi-list"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </div>
+                <div class="navbar-input kutu">
+                    <form action="" id="gonderiSorgula">
+                        <input type="text" id="gonderi-input" placeholder="Gönderi Kodunuz">
+                    </form>
+                </div>
+                <div class="navbar-ul kutu">
+                    <span class="ssss"><a href="">Anasayfa</a></span>
+                    <span><a href="">Ürünlerimiz</a></span>
+                    <span><a href="">Hizmeylerimiz</a></span>
+                    <span><a href="">Rota</a></span>
+                    <span><a href="">Ne Yaptık ?</a></span>
+                    <span><a href="">İletişim</a></span>
+                </div>
+                <div class="box kutu">
+                    <div class="icon-box">
+                        <div class="search-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </div>
+                        <div class="close-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="white"
+                                class="bi bi-x-lg" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="siparis">
+                        <span class="divider"></span>
+                        <button>SİPARİŞ OLUŞTUR</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!--? Dropdown Menu  -->
+        <div class="dropdown-btn">
+            <div class="container">
+                <div class="link">ANA SAYFA</div>
+                <div class="link">ÜRÜNLERİMİZ</div>
+                <div class="link">HİZMETLERİMİZ</div>
+                <div class="link">ROTA</div>
+                <div class="link">NE YAPTIK?</div>
+                <div class="link">İLETİŞİM</div>
+            </div>
+        </div>
+
+
+        <div class="first-block">
+            <div class="container">
+
+                <div class="header">
+                    <h1>Hoşgeldiniz! Burası Gürsoy Nakliyat</h1>
+                    <p>Gürsoy Nakliyat sıcaklık kontrolü gerektiren ürünlerinizin taşınması için size yardımcı
+                        olacaktır.</p>
+                </div>
+                <div class="box">
+                    <div class="teklif-box">
+                        <div class="control-group">
+                            <input type="radio" name="control" value="1" checked>
+                            <input type="radio" name="control" value="2">
+                            <input type="radio" name="control" value="3">
+                        </div>
+                        <div>
+                            <div value="1" class="form-group show">
+                                <div class="form">
+                                    <p>Sıcaklık kontrollü ürünleriniz için teklifler oluşturun & ekibimiz isteğinize
+                                        hemen
+                                        cevap verecektir.</p>
+                                    <form action="#">
+                                        <div class="form-div">
+                                            <span><img src="/images/icons/icons8-truck-50.png"></span>
+                                            <input type="text" placeholder="Yükleme Bölgesi">
+                                        </div>
+                                        <div class="form-div">
+                                            <span><img src="/images/icons/icons8-map-50.png"></span>
+                                            <input type="text" placeholder="Boşaltma Bölgesi">
+                                        </div>
+                                        <div class="form-div">
+                                            <span><img src="/images/icons/icons8-user-50.png"></span>
+                                            <input type="text" placeholder="İsminiz">
+                                        </div>
+                                        <div class="form-div">
+                                            <span><img src="/images/icons/icons8-mail-50.png"></span>
+                                            <input type="email" placeholder="Mail Adresiniz">
+                                        </div>
+                                        <div class="form-div">
+                                            <span><img src="/images/icons/icons8-phone-50-2.png"></span>
+                                            <input type="tel" placeholder="Telefon Numaranız">
+                                        </div>
+                                        <div class="form-div">
+                                            <span><img src="/images/icons/icons8-date-64.png"></span>
+                                            <input type="date" placeholder="Yükleme Tarihi">
+                                        </div>
+                                        <input type="hidden" name="" value="Standart Taşıma">
+                                        <div class="form-div form-button">
+                                            <button id="teklif-button">Teklif İste</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div value="2" class="form-group">
+                                <div class="form">
+                                    <p>Ürünleriniz istiflenemez ise çift katlı dorselerimiz ile teklif almak için lütfen
+                                        bu formu doldurun & Tabiki sıcaklık kontrollü.</p>
+                                    <form action="#">
+                                        <div class="form-div">
+                                            <span><img src="/images/icons/icons8-truck-50.png"></span>
+                                            <input type="text" placeholder="Yükleme Bölgesi">
+                                        </div>
+                                        <div class="form-div">
+                                            <span><img src="/images/icons/icons8-map-50.png"></span>
+                                            <input type="text" placeholder="Boşaltma Bölgesi">
+                                        </div>
+                                        <div class="form-div">
+                                            <span><img src="/images/icons/icons8-user-50.png"></span>
+                                            <input type="text" placeholder="İsminiz">
+                                        </div>
+                                        <div class="form-div">
+                                            <span><img src="/images/icons/icons8-mail-50.png"></span>
+                                            <input type="email" placeholder="Mail Adresiniz">
+                                        </div>
+                                        <div class="form-div">
+                                            <span><img src="/images/icons/icons8-phone-50-2.png"></span>
+                                            <input type="tel" placeholder="Telefon Numaranız">
+                                        </div>
+                                        <div class="form-div">
+                                            <span><img src="/images/icons/icons8-date-64.png"></span>
+                                            <input type="date" placeholder="Yükleme Tarihi">
+                                        </div>
+                                        <input type="hidden" name="" value="Double Deck">
+                                        <div class="form-div form-button">
+                                            <button id="teklif-button">Teklif İste</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div value="3" class="form-group">
+                                <div class="form">
+                                    <form action="#">
+                                        <div class="form-div hizmet-sec">
+                                            <span><img src="/images/icons/baggage.png"></span>
+                                            <select name="hizmet">
+                                                <option value="" selected disabled>Hizmetinizi Seçiniz</option>
+                                                <option value="">Çift Dereceli Taşıma</option>
+                                                <option value="">Multi Stop</option>
+                                                <option value="">Eskort Araçlı Taşıma</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-div">
+                                            <span><img src="/images/icons/icons8-packing-48.png"></span>
+                                            <input type="text" placeholder="Ürün Türü">
+                                        </div>
+                                        <div class="form-div">
+                                            <span><img src="/images/icons/icons8-driver-50.png"></span>
+                                            <select name="hizmet">
+                                                <option value="" selected disabled>Sürücü Sayısı</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-div">
+                                            <span><img src="/images/icons/icons8-truck-50.png"></span>
+                                            <input type="text" placeholder="Yükleme Bölgesi">
+                                        </div>
+                                        <div class="form-div">
+                                            <span><img src="/images/icons/icons8-map-50.png"></span>
+                                            <input type="text" placeholder="Boşaltma Bölgesi">
+                                        </div>
+                                        <div class="form-div">
+                                            <span><img src="/images/icons/icons8-user-50.png"></span>
+                                            <input type="text" placeholder="İsminiz">
+                                        </div>
+                                        <div class="form-div">
+                                            <span><img src="/images/icons/icons8-mail-50.png"></span>
+                                            <input type="email" placeholder="Mail Adresiniz">
+                                        </div>
+                                        <div class="form-div">
+                                            <span><img src="/images/icons/icons8-phone-50-2.png"></span>
+                                            <input type="tel" placeholder="Telefon Numaranız">
+                                        </div>
+                                        <div class="form-div">
+                                            <span><img src="/images/icons/icons8-date-64.png"></span>
+                                            <input type="date" placeholder="Yükleme Tarihi">
+                                        </div>
+                                        <input type="hidden" name="" value="Diğer Ürünler">
+                                        <div class="form-div form-button">
+                                            <button id="teklif-button">Teklif İste</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-box">
+                        <img src="images/truck.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--todo Shape Divider  -->
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                opacity=".25" class="shape-fill" fill="#2665d8" fill-opacity="1"></path>
+            <path
+                d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                opacity=".5" class="shape-fill" fill="#2665d8" fill-opacity="1"></path>
+            <path
+                d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                class="shape-fill" fill="#2665d8" fill-opacity="1"></path>
+        </svg>
+        <!--todo Shape Divider End -->
+
+
+        <div class="second-block">
+            <div class="container">
+                <h2>Taşımalarımızı nasıl yapıyoruz?</h2>
+                <p>İnsanların ihtiyaçlarına yönelik gıda ve ilaç ürünlerinin taşımacılığı amacıyla 2004 yılında
+                    kurulmuştur. Yaptığı özel işlerle birlikte çok kısa zamanda Türkiye’de taşımacılık sektörün de
+                    farklı bir konuma yerleşmiştir. Bugün geldiğimiz nokta da Dünya’nın en büyük ilaç ve gıda
+                    şirketlerinin taşımacılığını en üst düzey standartlarda taşıyoruz.</p>
+            </div>
+        </div>
+        <div class="three-block">
+            <div class="container">
+                <div class="img-box">
+                    <img src="/images/others/truck2.png" alt="">
+                </div>
+                <div>
+                    <h3>Derece Kontrollü Taşıma.</h3>
+                    <p>İçten içe 13,60 Metre uzunluk, 2,65 Metre yükseklik 2,42 m en boyutları olan, belirli bir derece
+                        aralığında korunması gereken ürünlerinizin taşındığı treyler tipidir.</p>
+                    <p>Bu treyler 33 Euro palet yükleme kapasitesine sahiptir.</p>
+                </div>
+                <div>
+                    <h3>Derece Kontrollü & Çift Katlı Taşıma</h3>
+                    <p>İçten içe 13,60 Metre uzunluk, 2,65 Metre yükseklik 2,42 m en boyutları olan, belirli bir derece
+                        aralığında korunması gereken ürünlerinizin taşındığı treyler tipidir.</p>
+                    <p>Bu treyler istiflenemez dahil olsa 66 Euro palet yükleme kapasitesine sahiptir.</p>
+                </div>
+                <div class="img-box">
+                    <img src="/images/others/6.jpg" alt="">
+                </div>
+                <div class="img-box">
+                    <img src="/images/others/truck3.png" alt="">
+                </div>
+                <div>
+                    <h3>Tek araç. Farklı ürün. Farklı derece.</h3>
+                    <p>İstediğiniz iki farklı dereceyi aynı aracın içinde tek navlun ile taşımanızı sağlıyoruz</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="four-block">
+            <div class="container">
+                <div class="box">
+                    <div class="header">
+                        <h1>Size sunduğumuz hizmetlerimiz.</h1>
+                    </div>
+                    <div class="explain">
+                        <p>Sunulan hizmetlerimizin içine tabiki tecrübemizi ve çok niş bir sektöre hizmet etmenin
+                            zorluğunu katmıyoruz :)</p>
+                        <h3>Hizmetlerimiz:</h3>
+                        <div class="ul-box">
+                            <ul>
+                                <li>100% Güven</li>
+                                <li>100% Güvenlik & Kilit</li>
+                                <li>Türkiye'den Avrupa'ya Transit</li>
+                                <li>Avrupa'dan Türkiye'ye Transit</li>
+                                <li>Avrupa'dan Asya'ya Transit</li>
+                                <li>Double - Deck</li>
+                                <li>Single Deck</li>
+                            </ul>
+                            <ul>
+                                <li>Bi - Thermo</li>
+                                <li>Yurt dışı gümrükleme</li>
+                                <li>Çift Sürücü</li>
+                                <li>Eskort Araç</li>
+                                <li>7x24 Destek</li>
+                                <li>100% Memnuniyet</li>
+                                <li>-25 Derece ile +30 Derece arası taşıma</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-shape-divider-bottom-1681804408">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+
+
+        <div class="five-block">
+            <div class="container">
+                <div>
+                    <img src="/images/five-block-icons/certificate.svg" alt="">
+                    <h4>GDP SERTİFİKAMIZ</h4>
+                    <p>GDP sertifikamızı görmek için <button onclick="modal_process()"
+                            class="sertifika">tıklanıyınız</button></p>
+                </div>
+                <div>
+                    <img src="/images/five-block-icons/pharmacy.svg" alt="">
+                    <h4>İLAÇ TAŞIMACILIĞI</h4>
+                    <p>2004 yılında kurulan şirketimiz ilaç ve gıda taşımacılığında kesintisiz hizmeti ile sektöründe
+                        lider şirketlerden birtanesi olmuştur.</p>
+                </div>
+
+                <div>
+                    <img src="/images/five-block-icons/truck.svg" alt="">
+                    <h4>GIDA TAŞIMACILIĞI</h4>
+                    <p>Gıda ürünlerinizin taşınmasında ürünlerin anlık olarak derece takipleri yapılmaktadır.
+                        İstediğiniz derece aralığında sapma yaşanmadan ürünlerinizi adresinize teslim ediyoruz</p>
+                </div>
+                <div>
+                    <img src="/images/five-block-icons/fever.svg" alt="">
+                    <h4>ÜRÜN TAKİBİ</h4>
+                    <p>2004 yılında kurulan şirketimiz ilaç ve gıda taşımacılığında kesintisiz hizmeti ile sektöründe
+                        lider şirketlerden birtanesi olmuştur.</p>
+                </div>
+                <div>
+                    <img src="/images/five-block-icons/co2.svg" alt="">
+                    <h4>KARBON AYAK İZİ</h4>
+                    <p>EUROVI normlarına ayak uyduran şirketimiz filosunun yarısından fazlasını EUROVI çekiciler ile
+                        güncelledi.</p>
+                </div>
+                <div>
+                    <img src="/images/five-block-icons/crm.svg" alt="">
+                    <h4>B2B BAYİ PORTALI</h4>
+                    <p>Siparişlerinizi, ürnlerinizi, evraklarınızı ve yolda olan gönderilerinizin anlık durumlarını
+                        takip edebilirsiniz.</p>
+                </div>
+
+            </div>
+
+            <div class="sertifika-box">
+                <div class="close-icon" onclick="modal_process()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                      </svg>
+                </div>
+                <img src="/images/GDP-2020.png" alt="" srcset="">
+            </div>
+        </div>
+
+        <div class="six-block">
+            <div class="container">
+                <h2>Hizmet ağımız hergün daha biraz daha genişliyor.</h2>
+                <div class="countries">
+                    <div class="countries-1">
+                        <div>
+                            <img src="/images/flags/germany.png">
+                            <span>Almanya</span>
+                        </div>
+                        <div>
+                            <img src="/images/flags/poland.png">
+                            <span>Polonya</span>
+                        </div>
+                        <div>
+                            <img src="/images/flags/slovenia.png" alt="" srcset="">
+                            <span>Slovenya</span>
+                        </div>
+                        <div>
+                            <img src="/images/flags/switzerland.png" alt="" srcset="">
+                            <span>İsviçre</span>
+                        </div>
+                        <div>
+                            <img src="/images/flags/france.png" alt="" srcset="">
+                            <span>Fransa</span>
+                        </div>
+                    </div>
+                    <div class="countries-2">
+                        <div>
+                            <img src="/images/flags/hungary.png" alt="" srcset="">
+                            <span>Macaristan</span>
+                        </div>
+                        <div>
+                            <img src="/images/flags/uk.png" alt="" srcset="">
+                            <span>İngiltire</span>
+                        </div>
+                        <div>
+                            <img src="/images/flags/netherlands.png" alt="" srcset="">
+                            <span>Hollanda</span>
+                        </div>
+                        <div>
+                            <img src="/images/flags/belgium.png" alt="" srcset="">
+                            <span>Belçika</span>
+                        </div>
+                        <div>
+                            <img src="/images/flags/czech.png" alt="" srcset="">
+                            <span>Çek Cumhuriyeti</span>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="info-box">
+                    <div class="kutu">
+                        <span class="circle"></span>
+                        <div class="number">1,300+</div>
+                        <div class="explain">Aylık Euro Palet</div>
+                    </div>
+                    <div class="kutu">
+                        <span class="circle"></span>
+                        <div class="number">16+</div>
+                        <div class="explain">Yıllık Tecrübe</div>
+                    </div>
+                    <div class="kutu">
+                        <span class="circle"></span>
+                        <div class="number">80+</div>
+                        <div class="explain">Personel</div>
+                    </div>
+                    <div class="kutu">
+                        <span class="circle"></span>
+                        <div class="number">10+</div>
+                        <div class="explain">Avrupa Ülkesine Hizmet</div>
+                    </div>
+
+                    <!-- <div class="circle-box">
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="seven-block">
+            <svg preserveAspectRatio="xMidYMax meet" class="svg-separator sep3" viewBox="0 0 1600 100">
+                <path style="opacity: 1;fill: #FFF;"
+                    d="M-40,71.627C20.307,71.627,20.058,32,80,32s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,26H-60V72L-40,71.627z">
+                </path>
+                <path class="svg-themecolor" style="opacity: 0.1;"
+                    d="M-40,83.627C20.307,83.627,20.058,44,80,44s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,14H-60V84L-40,83.627z">
+                </path>
+                <path style="fill: #FFF;"
+                    d="M-40,95.627C20.307,95.627,20.058,56,80,56s60.003,40,120,40s59.948-40,120-40s60.313,40,120,40s60.258-40,120-40s60.202,40,120,40s60.147-40,120-40s60.513,40,120,40s60.036-40,120-40c59.964,0,60.402,40,120,40s59.925-40,120-40s60.291,40,120,40s60.235-40,120-40s60.18,40,120,40s59.82,0,59.82,0l0.18,138H-60V96L-40,95.627z">
+                </path>
+            </svg>
+            <div class="container">
+                <h2>Adreslerimiz</h2>
+                <div class="location-box">
+                    <div class="location">
+                        <h3>Merkez Ofis:</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d712.1934167876931!2d39.64133890826241!3d40.99888195441413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdbe6900b5211f6ee!2sG%C3%BCrsoy%20Kamyon%20Pazari!5e0!3m2!1str!2str!4v1587647462038!5m2!1str!2str"
+                            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+                            id="fitvid0"></iframe>
+                    </div>
+                    <div class="location">
+                        <h3>İstanbul Garaj:</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1031.5722619259113!2d29.356578347739894!3d40.907181887708965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cad9c3a61e838f%3A0x35b989c2722f8d79!2zR8O8cnNveSBUxLFyIFBhemFyxLEgJiBOYWtsaXlhdA!5e0!3m2!1str!2str!4v1587645354263!5m2!1str!2str"
+                            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+                            id="fitvid1"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="eight-block">
+            <div class="container">
+                <div class="title"><span>NEDEN BİZİ TERCİH ETMELİSİNİZ?</span></div>
+
+                <div class="box">
+                    <div class="flex">
+                        <div class="baslik">Farklı taşıma türleri için tek tedarikçi.</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-plus-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        </svg>
+                    </div>
+                    <div class="explain">Hem çift derece hem çift katlı taşımalarınız hem de normal taşımalarınız için
+                        tek çözüm
+                        noktanız olmaktan gurur duyuyoruz. Siparişleriniz için en geç 7 gün için de kesin bir çözüm
+                        üretiyoruz.</div>
+
+                </div>
+                <div class="box">
+                    <div class="flex">
+                        <div class="baslik">En iyi taşıma ekipmanları.</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-plus-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        </svg>
+                    </div>
+                    <div class="explain">
+                        Taşıma ekipmanlarımızın tamamı Krone ve Schmitz markalarını tercih ediyoruz. Soğutma
+                        ünitelerimiz ise Thermo-King ve Carrier markalarını kullanıyoruz. Bütün ekipmanlarımızın FRC/ATP
+                        sertifikaları vardır.
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="flex">
+                        <div class="baslik">Bulut</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-plus-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        </svg>
+                    </div>
+                    <div class="explain">Bütün sistemlerimiz Microsoft Azure üzerine kurulu olup 7/24 sorularınıza mekan
+                        farketmeksizin çözüm sunan ekibimiz ile anlık çözümler sunuyoruz.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nine-block">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill" fill="#FFFF" fill-opacity="1"></path>
+            </svg>
+            <div class="container">
+                <h1>Lütfen bizimle iletişime geçiniz</h1>
+                <p>Daha önce bu kadar basit bir nakliye süreci yaşamadığınızı garanti ediyoruz.</p>
+                <button>SİPARİŞ VER</button>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="container">
+                <div class="grid">
+                    <div>
+                        <img class="varlik" src="/images/logo2.svg" alt="">
+                    </div>
+                    <div>
+                        <h4>Faydalı Linkler</h4>
+                        <p>Güvenli Park Listesi</p>
+                        <p>Araç Takip</p>
+                    </div>
+                    <div>
+                        <h4>Merkez Ofis:</h4>
+                        <p>Akcaabat Caddesi Gürsoy Sitesi No:7
+                            TR-61195 Ortahisar / Trabzon</p>
+                    </div>
+                    <div>
+                        <h4>İstanbul Ofis:</h4>
+                        <p>Kurna Yolu Caddesi No:33
+                            TR-34956 Tuzla / İstanbul</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="telephone">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2665d8"
+                            class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg>
+                        <span style="padding-left: 10px;">0 850 551 4779</span>
+                    </div>
+                    <div class="icons">
+                        <span class="facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                            </svg></span>
+                        <span class="instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                            </svg></span>
+                    </div>
+                </div>
+                <div class="copyrights">
+                    Copyrights © 2020 All Rights Reserved by <a target="_blank" href="http://halilgursoy.com.tr/">Halil Gürsoy</a>  and <a href="https://www.linkedin.com/in/alperen-nuro%C4%9Flu-155b42215/" target="_blank">Alperen Nuroğlu</a> 
+                </div>
+            </div>
+        </footer>
+
+
+
+        <div class="siparis-modal" id="modal">
+            <div class="container">
+                <div class="header">
+                    <span class="order">ORDER # <span id="gonderiNuamrası" class="order-no"></span></span>
+                    <span class="durum">Durum: <span class="durum-result" id="statu"></span></span>
+                    <span class="siparis">Sipariş Tarihi: <span class="siparis-tarih" id="siparisTarihi"></span></span>
+                </div>
+
+                <div class="location">
+                    <img src="/images/modal-icons/icons8-location-20.png" alt="" srcset="">
+                    <span class="konum"> Yeşilyalı Aytemiz Eroğlu Er Petrol</span>
+                </div>
+                <div class="teslim">Teslim Tarihi: <span class="teslim-tarihi" id="teslimTarihi"></span></div>
+
+                <div class="info-box">
+                    <div>
+                        <img src="/images/modal-icons/icons8-fork-lift-48.png" alt="">
+                        <span>Yükleme <br><span class="yukleme" id="yuklemeUlkesi"></span></span>
+                    </div>
+                    <div>
+                        <img src="/images/modal-icons/icons8-truck-48.png" alt="">
+                        <span class="cekici" id="cekiciPlaka"></span>
+                    </div>
+                    <div>
+                        <img src="/images/modal-icons/icons8-driver-48.png" alt="">
+                        <span>Sürücü: <br><span class="surucu" id="surucu"></span></span>
+                    </div>
+                    <div>
+                        <img src="/images/modal-icons/icons8-shipped-48.png" alt="">
+                        <span>Teslim: <br><span class="yukleme" id="teslimUlkesi"></span></span>
+                    </div>
+                </div>
+                <div class="close-button"><button onclick="close_modal()">Kapat</button></div>
+            </div>
+        </div>
+
+
+
+
+        <script src="js/script.js"></script>
+    </body>
+
+</html>

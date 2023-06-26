@@ -1,0 +1,85 @@
+.four-block {
+    background-image: linear-gradient(to right, rgba(25, 102, 221, 0.2), rgba(25, 102, 221, 0.5)), url('/images/others/2.jpg');
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 100px;
+    height: 775px;
+    position: relative;
+}
+
+.four-block .container{
+    /* padding: 105px 20px; */
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.four-block .container .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.four-block .container .box .header h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+@media (width >= 775px) {
+    .four-block .container .box{
+        flex-direction: row;
+    }
+
+    .four-block .container .box .header h1{
+        font-size: 56px;
+        line-height: 65px;
+    }
+}
+.four-block .container .box .explain p{
+    margin-bottom: 50px;
+}
+
+.four-block .container .box .explain h3{
+    margin-bottom: 20px;
+}
+
+.four-block .container .box .explain .ul-box{
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.four-block .container .box .explain .ul-box ul{
+    list-style-image: url(/images/icons/icons8-verified-16.png);
+    width: 100%;
+}
+.four-block .container .box .explain .ul-box ul li{
+    font-size: 14px;
+    margin: 5px 20px;
+}
+
+
+.custom-shape-divider-bottom-1681804408 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1681804408 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 42px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1681804408 .shape-fill {
+    fill: #FFFFFF;
+}

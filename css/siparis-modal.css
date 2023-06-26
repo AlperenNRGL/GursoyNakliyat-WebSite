@@ -1,0 +1,128 @@
+.siparis-modal{
+    position: fixed;
+    background-color: rgba(0, 0, 0, .6);
+    inset: 0;
+    padding: 0 10px;
+    display: none;
+}
+
+.siparis-modal .container{
+    background-color: white;
+    max-width: 850px;
+    margin: 75px auto;
+    padding: 50px 10px 20px 10px;
+    border-radius: 5px;
+}
+
+.siparis-modal .container .header {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+}
+
+.siparis-modal .container .header .order{
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(68, 68, 68);
+    margin-bottom: 20px;
+}
+
+.siparis-modal .container .header .order-no{
+    color: var(--main-blue);
+}
+
+.siparis-modal .container .header .durum{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(68, 68, 68);
+    margin-bottom: 20px;
+}
+
+.siparis-modal .container .header .durum-result{
+    color: var(--main-blue);
+}
+
+.siparis-modal .container .header .siparis{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(68, 68, 68);
+    margin-bottom: 20px;
+}
+
+.siparis-modal .container .location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+.siparis-modal .container  .teslim{
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(68, 68, 68);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.siparis-modal .container  .teslim-tarihi{
+    color:var(--main-blue);
+}
+
+.siparis-modal .container .info-box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.siparis-modal .container .info-box div{
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.siparis-modal .container .info-box div img{
+    padding-right: 8px;
+}
+
+.siparis-modal .container .close-button{
+display: flex;
+justify-content: end;
+}
+
+.siparis-modal .container .close-button button{
+    margin-top: 35px;
+    padding: 7px 10px;
+    border-radius: 7px;
+    color: white;
+    background-color: rgb(206, 73, 72);
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+@media (width >= 668px) {
+    .siparis-modal .container .header {
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+    
+    }
+
+    .siparis-modal{
+        position: fixed;
+        background-color: rgba(0, 0, 0, .6);
+        inset: 0;
+        padding: 0 30px;
+    }
+
+
+.siparis-modal .container .info-box{
+    grid-template-columns: repeat(4,1fr);
+}
+}

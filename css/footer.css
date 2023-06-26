@@ -1,0 +1,88 @@
+footer .container .grid{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px 20px;
+}
+
+footer .container .grid h4{
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+footer .container .grid p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+footer .container .box .telephone{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--main-blue);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 0 15px;
+}
+
+footer .container .box .icons{
+    width: 100px;
+    display: flex;
+    margin-left: auto;
+}
+
+footer .container .box .icons span{
+    padding: 8px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s linear;
+}
+
+footer .container .box .icons span.facebook svg{
+    transition: all .2s linear;
+}
+footer .container .box .icons span.facebook:hover{
+    background-color: #4267B2;
+}
+footer .container .box .icons span.facebook:hover svg{
+    color: white;
+}
+
+footer .container .box .icons span.instagram svg{
+    transition: all .2s linear;
+}
+footer .container .box .icons span.instagram:hover{
+    background:linear-gradient(to bottom,#405DE6,#5B51D8,#833AB4,#C13584,#E1306C,#FD1D1D,#F56040,#F77737,#FCAF45,#FFDC80);
+}
+footer .container .box .icons span.instagram:hover svg{
+    color: white;
+}
+
+@media (width <= 700px) {
+    footer .container .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    footer .container img.varlik{
+        width: 200px;
+    }
+}
+
+
+footer .copyrights {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 75px;
+    padding-top: 75px;
+}
+
+footer .copyrights a{
+    color: var(--main-blue);
+    font-weight: 500;
+}

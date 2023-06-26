@@ -1,0 +1,83 @@
+.eight-block{
+    margin-top: 125px;
+    margin-bottom: 100px;
+}
+
+.eight-block .container {
+    max-width: 900px;
+    background-color: white;
+}
+
+.eight-block .container .title{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.eight-block .container .title span{
+    font-size:10.5px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+    background-color: rgba(25, 102, 221, 0.08);
+    color: rgb(15, 102, 221);
+    border-radius: 160px;
+    margin: 0 auto;
+}
+
+
+.eight-block .container .box{
+    border-bottom: 1px solid rgb(238, 238, 238);
+    padding: 10px 0;
+}
+
+.eight-block .container .box:last-child{
+    border-bottom: none;
+}
+
+
+.eight-block .container .box .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 15px 0;
+    cursor: pointer;
+    background-color: white;
+
+}
+
+.eight-block .container .box .flex svg{
+    transition: 0.2s all  linear;
+}
+.eight-block .container .box .flex.show svg{
+    color: rgb(0, 0, 255);
+    transform: rotate(45deg);
+}
+
+.eight-block .container .box .flex .baslik{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgb(68, 68, 68);
+}
+
+.eight-block .container .box .explain{
+    font-size: 14;
+    font-weight: 400;
+    line-height: 21px;
+    color: rgba(0, 0, 0, .5);
+    transition: .2s height linear;
+    overflow: hidden;
+    height: 0;
+
+}
+
+.eight-block .container .box .explain.show{
+    height: 110px;
+}
+
+
+@media (width >= 600px) {
+    .eight-block .container .box .explain.show{
+        height: 70px;
+    }
+}

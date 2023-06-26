@@ -1,0 +1,126 @@
+.six-block {
+    margin-top: 125px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('/images/map.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.six-block .container {
+    text-align: center;
+
+}
+
+.six-block .container h2 {
+    color: rgb(68, 68, 68);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+    max-width: 580px;
+    margin: 0 auto;
+}
+
+
+.six-block .container .countries {
+    display: flex;
+    justify-content: space-around;
+    max-width: 500px;
+    margin: 25px auto;
+}
+
+.six-block .container .countries .countries-1 div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: rgb(136, 136, 136);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.six-block .container .countries .countries-2 div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: rgb(136, 136, 136);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.six-block .container .countries .countries-1 div img {
+    width: 16px;
+    margin-right: 10px;
+}
+
+.six-block .container .countries .countries-2 div img {
+    width: 16px;
+    margin-right: 10px;
+}
+
+
+
+
+/* ? İnfo Box */
+
+
+
+.six-block .info-box {
+    margin-top: 70px;
+    border-top: 1px dotted rgb(224, 216, 216);
+    text-align: center;
+    position: relative;
+    padding: 50px 0;
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.six-block .info-box .kutu {
+    position: relative;
+    height: 85px;
+    margin-bottom: 40px;
+
+}
+
+.six-block .info-box .kutu .circle {
+    position: absolute;
+    top: -57px;
+    display: inline-block;
+    width: 14px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 3px solid white;
+    background-color: blue;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);
+
+}
+
+.six-block .info-box div .number {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.six-block .info-box div .explain {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+    line-height: 21px;
+    color: rgb(68, 68, 68);
+}
+
+
+
+
+
+@media (width <=575px) {
+    .six-block .info-box .kutu .circle {
+        display: none;
+    }
+
+    .six-block .info-box {
+        border-top: none;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
